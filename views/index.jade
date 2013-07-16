@@ -7,14 +7,14 @@ block content
         h1 LUNTEG
     .row
       .span12
-        table(class='table table-striped table-bordered')
+        table(class='table table-striped table-bordered', id="video-table")
           tr
-            th #
+            th.num #
             th File Name
           each videoFile, index in mp4files
             tr
-              td #{index}
+              td.num #{index}
               td
-                a(href='/video/#{videoFile}', class='btn')
+                a(href='/video/#{videoFile}', class='btn btn-large')
                   span #{videoFile}
                   i(class="icon-play")
