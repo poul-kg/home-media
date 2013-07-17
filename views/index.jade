@@ -3,18 +3,11 @@ extends layout
 block content
   .container
     .row
-      .span12
+      .span11
         h1 LUNTEG
-    .row
-      .span12
-        table(class='table table-striped table-bordered', id="video-table")
-          tr
-            th.num #
-            th File Name
-          each videoFile, index in mp4files
-            tr
-              td.num #{index + 1}
-              td
-                a(href='/video/#{videoFile}', class='btn btn-large')
-                  span #{videoFile}
-                  i(class="icon-play")
+    each movie, index in mp4files
+      .row.movie
+        .span1.offset1
+          .movie-index #{index}
+        .span9
+          a.movie-link(href="/video/#{movie.fileName}") #{movie.title}

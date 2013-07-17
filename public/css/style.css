@@ -1,13 +1,62 @@
+/************************************************
+ Colors
+*************************************************/
+/************************************************
+ Generic
+*************************************************/
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url(../img/kindajean.png) repeat scroll 0 0 #d7dadb;
 }
-
+@media (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background: url(../img/kindajean_@2X.png) repeat top left;
+    background-size: 147px 147px;
+  }
+}
 a {
   color: #00B7FF;
 }
-
-#video-table .num {
-    text-align: center;
-    vertical-align: middle;
+h1 {
+  background-color: #c4273c;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-family: Roboto, san-serif;
+  font-weight: 300;
+}
+/************************************************
+ Video List
+*************************************************/
+.movie {
+  margin-bottom: 10px;
+}
+.movie-index {
+  background-color: #ffffff;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 48px;
+  color: #6dbcdb;
+}
+.movie-link:visited {
+  background-color: #263545;
+  color: #d7dadb;
+}
+.movie-link:hover,
+.movie-link {
+  background-color: #6dbcdb;
+  color: #ffffff;
+  height: 64px;
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-size: 36px;
+  padding: 0 0 0 1rem;
+  line-height: 160%;
+  text-decoration: none;
+}
+.movie-link:hover {
+  background-color: #C4273C;
+  color: #fff;
 }
